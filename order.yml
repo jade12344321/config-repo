@@ -13,6 +13,3 @@ PRODUCT:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 server:
   port: 8081
-
-env:
-  dev
