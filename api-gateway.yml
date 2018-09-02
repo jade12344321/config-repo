@@ -1,6 +1,6 @@
 spring:
   application:
-    name: aoi-gateway
+    name: api-gateway
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
