@@ -21,3 +21,16 @@ PRODUCT:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 server:
   port: 9000
+zuul:
+  routes:
+    myProduct:
+      path: /myProduct/**
+      serviceId: product
+  sensitiveHeaders:
+  ignored-patterns:
+    - /**/product/listForOrder
+#    - /product/product/listForOrder
+#    - /myProduct/product/listForOrder
+management:
+  security:
+    enabled: false
